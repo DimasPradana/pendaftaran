@@ -10,7 +10,7 @@
             {{  csrf_field() }}
             <div class="row">
                 <div class="input-field col s12">
-{{--                    <input readonly value="{{$ambildatanpwpds->NPWPD}} "id="npwpd" type="text" class="validate" name="NPWPD">--}}
+					{{--<input readonly value="{{$ambildatanpwpds->NPWPD}} "id="npwpd" type="text" class="validate" name="NPWPD">--}}
                     <input  id="npwpd" type="text" class="validate" name="NPWPD">
                     <label for="disabled">NPWPD</label>
                 </div>
@@ -18,17 +18,17 @@
 
             <div class="row">
                 <div class="input-field col s12">
-{{--                    <input readonly value="{{$ambildatanpwpds->NamaWP}}" id="namawp" type="text" class="validate" name="NamaWP">--}}
+					{{--<input readonly value="{{$ambildatanpwpds->NamaWP}}" id="namawp" type="text" class="validate" name="NamaWP">--}}
+					<label for="disabled">Nama</label>
                     <input readonly id="namawp" type="text" class="validate" name="NamaWP">
-                    <label for="disabled">Nama</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-{{--                    <input readonly value="{{$ambildatanpwpds->AlamatWP}}" id="alamatwp" type="text" class="validate" name="AlamatWP">--}}
+					{{--<input readonly value="{{$ambildatanpwpds->AlamatWP}}" id="alamatwp" type="text" class="validate" name="AlamatWP">--}}
+					<label for="disabled">Alamat</label>
                     <input readonly id="alamatwp" type="text" class="validate" name="AlamatWP">
-                    <label for="disabled">Alamat</label>
                 </div>
             </div>
 
@@ -103,7 +103,7 @@
     </div>
 
         <script src="{{asset('public/js/jquery-3.3.1.min.js')}}"></script>
-        <script src="{{asset('public/js/jquery.mask.js')}}"></script>
+        <script src="{{asset('public/js/jquery.mask.min.js')}}"></script>
         <script>
             // untuk jquery
            $(document).ready(function(){
@@ -185,6 +185,7 @@
                 alert('Nomor tiket pendaftaranmu adalah : '+ msg);
             }
 
+			// mask number menggunakan plugin jquery.mask.js
             $('#jumlahpajak').mask('000.000.000.000.000', {reverse:true});
             $('#nohp').mask('0000-0000-0000', {reverse:true});
 

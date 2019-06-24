@@ -7,7 +7,7 @@
             {{--<li>Nama : {{$ambildatanpwpds->NamaWP}}</li>--}}
             {{--<li>Alamat : {{$ambildatanpwpds->AlamatWP}}</li>--}}
             {{--<li>Nomer Handphone : {{$ambildatanpwpds->ContactPerson}}</li>--}}
-        </ul>
+        {{--</ul>--}}
     </div>
 </div>
 <div class="section">

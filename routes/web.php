@@ -14,10 +14,17 @@
 //Route::get('/', function () {
     //return view('welcome');
 //});
-Route::get('/', 'CrudController@index');
+//Route::get('/', 'CrudController@index');
+Route::get('/', 'FormController@index');
+
 Route::post('/FormController/insertRestoran','FormController@insert_restoran');
+Route::post('/FormController/insertReklame','FormController@insert_reklame');
+
 Route::post('/FormController/fetch','FormController@fetch')->name('autocomplete.fetch');
 Route::post('/FormController/fetchnpwpd','FormController@fetchnpwpd')->name('autocomplete.fetchnpwpd');
+Route::post('/FormController/fetchruasjalan','FormController@fetchruasjalan')->name('autocomplete.fetchruasjalan');
+Route::post('/FormController/fetchobyekpajak','FormController@fetchobyekpajak')->name('autocomplete.fetchobyekpajak');
+
 Route::get('/formRestoran', [
     'uses'=>'FormController@pindah_restoran',
     'as' => 'formRestoran'
