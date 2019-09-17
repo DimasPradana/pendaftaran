@@ -19,6 +19,7 @@ Route::get('/', 'FormController@index');
 
 Route::post('/FormController/insertRestoran','FormController@insert_restoran');
 Route::post('/FormController/insertReklame','FormController@insert_reklame');
+Route::post('/FormController/insertHotel','FormController@insert_hotel');
 
 Route::post('/FormController/fetch','FormController@fetch')->name('autocomplete.fetch');
 Route::post('/FormController/fetchnpwpd','FormController@fetchnpwpd')->name('autocomplete.fetchnpwpd');
@@ -52,4 +53,8 @@ Route::get('/formAirtanah', [
 Route::get('/formMineral', [
     'uses'=>'FormController@pindah_mineral',
     'as' => 'formMineral'
+]);
+Route::get('/formAntrian', [
+    'uses'=>'FormController@pindah_antrian',
+    'as' => 'formAntrian'
 ]);

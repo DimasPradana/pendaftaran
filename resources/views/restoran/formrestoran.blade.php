@@ -11,8 +11,8 @@
             <div class="row">
                 <div class="input-field col s12">
 					{{--<input readonly value="{{$ambildatanpwpds->NPWPD}} "id="npwpd" type="text" class="validate" name="NPWPD">--}}
+					<label for="disabled">NPWPD</label>
                     <input  id="npwpd" type="text" class="validate" name="NPWPD">
-                    <label for="disabled">NPWPD</label>
                 </div>
             </div>
 
@@ -20,7 +20,7 @@
                 <div class="input-field col s12">
 					{{--<input readonly value="{{$ambildatanpwpds->NamaWP}}" id="namawp" type="text" class="validate" name="NamaWP">--}}
 					<label for="disabled">Nama</label>
-                    <input readonly id="namawp" type="text" class="validate" name="NamaWP">
+                    <input readonly id="namawp" type="text" class="validate" name="NamaWP" placeholder="Nama Wajib Pajak">
                 </div>
             </div>
 
@@ -28,7 +28,7 @@
                 <div class="input-field col s12">
 					{{--<input readonly value="{{$ambildatanpwpds->AlamatWP}}" id="alamatwp" type="text" class="validate" name="AlamatWP">--}}
 					<label for="disabled">Alamat</label>
-                    <input readonly id="alamatwp" type="text" class="validate" name="AlamatWP">
+                    <input readonly id="alamatwp" type="text" class="validate" name="AlamatWP" placeholder="Alamat Wajib Pajak">
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
-<nav class="orange accent-3" role="navigation">
+{{-- <nav class="orange accent-3" role="navigation"> --}}
+<nav class="teal darken-2" role="navigation">
 	<div class="nav-wrapper">
 		<link rel="shortcut icon" href="{{ asset('public/favicon.ico') }}">
 		<span>
@@ -17,6 +18,7 @@
 				<li><a href="{{ route('formParkir') }}">Parkir</a></li>
 				<li><a href="{{ route('formAirtanah')  }}">Air Tanah</a></li>
 				<li><a href="{{ route('formMineral') }}">Mineral</a></li>
+				<li><a href="{{ route('formAntrian') }}">Antrian</a></li>
 			</ul>
 		</span>
 	</div>
@@ -30,6 +32,7 @@
 	<li><a href="{{ route('formParkir') }}">Parkir</a></li>
 	<li><a href="{{ route('formAirtanah') }}">Air Tanah</a></li>
 	<li><a href="{{ route('formMineral') }}">Mineral</a></li>
+	<li><a href="{{ route('formAntrian') }}">Antrian</a></li>
 </ul>
 <script src="{{asset('public/js/jquery-3.3.1.min.js')}}"></script>
 <script>
